@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Work</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script>
+        function oddeven()
+        {
+            var x = Number(document.getElementById("num").value);
+            if (x%2)
+                document.getElementById("result").innerHTML=x + " is an Odd number";
+            else
+                document.getElementById("result").innerHTML=x + " is an Even number";
+        }
+    </script>
+</head>
+<body>
+    <form >
+        <div style="margin-top: 10%; margin-left: 37%">
+            <table >
+                <tr>
+                    <td>Enter a Number:</td>
+                    <td><input type="text" id="num" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button class="btn btn-primary" type="button" onclick="oddeven()">Odd Or Even?</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td ><h3 id="result"></h3></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

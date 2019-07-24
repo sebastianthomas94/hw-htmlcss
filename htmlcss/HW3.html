@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Work</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script>
+        function largest()
+        {
+            var a = Number(document.getElementById("x").value);
+            var b = Number(document.getElementById("y").value);
+            if (a>b)
+                document.getElementById("result").innerHTML=a;
+            else if (b>a)  
+                document.getElementById("result" ).innerHTML=b;
+        }
+
+    </script>
+</head>
+<body>
+    <form>
+        <div style="margin-top: 10%; margin-left: 38%;">
+            <table style=" border: 3px solid black">
+                <tr>
+                    <td>Enter a number:</td>
+                    <td><input type="text" id="x" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Enter a number:</td>
+                    <td><input type="text" id="y" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button class="btn btn-success" type="button" onclick="largest()">Find The Largest?</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Largest:</td>
+                    <td id="result"></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
