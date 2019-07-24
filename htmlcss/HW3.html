@@ -13,17 +13,19 @@
             var a = Number(document.getElementById("x").value);
             var b = Number(document.getElementById("y").value);
             if (a>b)
-                document.getElementById("result").innerHTML=a;
+                document.getElementById("result").innerHTML=a + " is the largest";
             else if (b>a)  
-                document.getElementById("result" ).innerHTML=b;
+                document.getElementById("result" ).innerHTML=b + " is the largest";
+            else
+                document.getElementById("result" ).innerHTML="They are equal";
         }
 
     </script>
 </head>
 <body>
     <form>
-        <div style="margin-top: 10%; margin-left: 38%;">
-            <table style=" border: 3px solid black">
+        <div style="margin-top: 10%; margin-left: 38%; ">
+            <table style=" ">
                 <tr>
                     <td>Enter a number:</td>
                     <td><input type="text" id="x" class="form-control"></td>
@@ -41,8 +43,8 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td>Largest:</td>
-                    <td id="result"></td>
+                    <td></td>
+                    <td><h3 id="result"></h3></td>
                 </tr>
             </table>
         </div>
