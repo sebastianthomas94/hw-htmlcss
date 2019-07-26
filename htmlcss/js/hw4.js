@@ -90,9 +90,10 @@ function generate()
 
 
 
-
-
-    document.getElementById("marklist").style.visibility="visible";
+    if(name && ecode && sem && sname1 && sname2 && sname3 && sname4 && sname5 && sname6 && smarks1 && smarks2 && smarks3 && smarks4 && smarks5 && smarks6 && stotal1 && stotal2 && stotal3 && stotal4 && stotal5 && stotal6)
+        document.getElementById("marklist").style.visibility="visible";
+    else
+        alert("ERROR: Please Enter Everything!")
 }
 
 
