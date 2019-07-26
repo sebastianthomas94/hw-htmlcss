@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mark List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="./js/hw4.js"></script>
+</head>
+<body>
+    <form action="">
+        <center>
+            <div style="margin-top: 25px">
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" class="form-control" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Semester:</td>
+                        <td>
+                            <select name="" id="sem">
+                                <option></option>
+                                <option>S1 & S2</option>
+                                <option>S3</option>
+                                <option>S4</option>
+                                <option>S5</option>
+                                <option>S6</option>
+                                <option>S7</option>
+                                <option>S8</option>
+                            </select>
+                        </td>
+                        <td>Exam Code:</td>
+                        <td><input type="text" class="form-control" id="ecode"></td>
+                    </tr>
+                    <tr>
+                        <td>Subject Name:</td>
+                        <td><input type="text" class="form-control" id="sname1"></td>
+                        <td>Marks Scored:</td>
+                        <td><input type="text" class="form-control" id="smarks1"></td>
+                        <td>Total Marks:</td>
+                        <td><input type="text" class="form-control" id="stotal1"></td>
+                    </tr>
+                    <tr>
+                        <td>Subject Name:</td>
+                        <td><input type="text" class="form-control" id="sname2"></td>
+                        <td>Marks Scored:</td>
+                        <td><input type="text" class="form-control" id="smarks2"></td>
+                        <td>Total Marks:</td>
+                        <td><input type="text" class="form-control" id="stotal2"></td>
+                    </tr>
+                    <tr>
+                        <td>Subject Name:</td>
+                        <td><input type="text" class="form-control" id="sname3"></td>
+                        <td>Marks Scored:</td>
+                        <td><input type="text" class="form-control" id="smarks3"></td>
+                        <td>Total Marks:</td>
+                        <td><input type="text" class="form-control" id="stotal3"></td>
+                    </tr>
+                    <tr>
+                        <td>Subject Name:</td>
+                        <td><input type="text" class="form-control" id="sname4"></td>
+                        <td>Marks Scored:</td>
+                        <td><input type="text" class="form-control" id="smarks4"></td>
+                        <td>Total Marks:</td>
+                        <td><input type="text" class="form-control" id="stotal4"></td>
+                    </tr>
+                    <tr>
+                        <td>Subject Name:</td>
+                        <td><input type="text" class="form-control" id="sname5"></td>
+                        <td>Marks Scored:</td>
+                        <td><input type="text" class="form-control" id="smarks5"></td>
+                        <td>Total Marks:</td>
+                        <td><input type="text" class="form-control" id="stotal5"></td>
+                    </tr>
+                    <tr>
+                        <td>Subject Name:</td>
+                        <td><input type="text" class="form-control" id="sname6"></td>
+                        <td>Marks Scored:</td>
+                        <td><input type="text" class="form-control" id="smarks6"></td>
+                        <td>Total Marks:</td>
+                        <td><input type="text" class="form-control" id="stotal6"></td>
+                    </tr>
+                </table>
+            </div>
+        </center>
+        <div style="margin-top: 25px">
+           <center>
+               <button class="btn btn-success" type="button" onclick="generate();">Generate Marklist</button>
+           </center> 
+        </div>
+
+        <div>
+            <div style="visibility: hidden" id="marklist">
+                <center>
+                    <table style="width: 1000px" >
+                        <tr>
+                            <td><h6>Name:</h5></td>
+                            <td><h6 id="pname" class="shadow-none p-3 mb-5 bg-light rounded"></h6></td>
+                            <td></td>
+                            <td style="margin-left: 10px"><h6>Semester:</h6></td>
+                            <td><h6 id="psem" class="shadow-none p-3 mb-5 bg-light rounded"></h6></td>
+                            <td><h6 style="text-align: right">Exam Code:</h6></td>
+                            <td><h6 class="shadow-none p-3 mb-5 bg-light rounded" id="pcode"></h6></td>
+                        </tr>
+                        <tr>
+                            <table class="table" style="" >
+                                <thead class="thead-dark" >
+                                    <tr>
+                                        <th scope="col"><b>Subject<b></th>
+                                        <th scope="col"><b>Marks Obtained</b></th>
+                                        <th scope="col"><b>Total Matks</b></th>
+                                        <th scope="col"><b>Grade</b></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="sub1"></td>
+                                        <td id="pmark1"></td>
+                                        <td id="ptotal1"></td>
+                                        <td id="pgrade1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="sub2"></td>
+                                        <td id="pmark2"></td>
+                                        <td id="ptotal2"></td>
+                                        <td id="pgrade2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="sub3"></td>
+                                        <td id="pmark3"></td>
+                                        <td id="ptotal3"></td>
+                                        <td id="pgrade3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="sub4"></td>
+                                        <td id="pmark4"></td>
+                                        <td id="ptotal4"></td>
+                                        <td id="pgrade4"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="sub5"></td>
+                                        <td id="pmark5"></td>
+                                        <td id="ptotal5"></td>
+                                        <td id="pgrade5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="sub6"></td>
+                                        <td id="pmark6"></td>
+                                        <td id="ptotal6"></td>
+                                        <td id="pgrade6"></td>
+                                    </tr>
+                                
+                                </tbody>
+                            </table>
+                        </tr>
+                    </table>
+                </center>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
