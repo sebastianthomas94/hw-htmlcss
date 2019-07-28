@@ -20,7 +20,7 @@ function generate()
  
 
     var sname3=document.getElementById("sname3").value;
-    document.getElementById("sub2").innerHTML=sname3;
+    document.getElementById("sub3").innerHTML=sname3;
 
 
     var sname4=document.getElementById("sname4").value;
@@ -94,6 +94,12 @@ function generate()
         document.getElementById("marklist").style.visibility="visible";
     else
         alert("ERROR: Please Enter Everything!")
+
+
+    if(g1=="F" || g2=="F" || g3=="F" || g4=="F" || g5=="F" || g6=="F")
+        document.getElementById("Failed").innerHTML="Failed"
+    else
+        document.getElementById("Passed").innerHTML="Passed"
 }
 
 
