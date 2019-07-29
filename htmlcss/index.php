@@ -1,3 +1,3 @@
 <?php
-header('Location:hw2.html');
+header('Location:HW4Marklist.html');
 ?>
