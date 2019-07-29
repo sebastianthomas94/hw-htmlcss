@@ -1,3 +1,3 @@
 <?php
-header('hw2.html');
+header('Location:hw2.html');
 ?>
